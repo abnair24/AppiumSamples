@@ -1,0 +1,20 @@
+group 'com.tw.appiumSamples'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+
+dependencies {
+    testCompile 'org.awaitility:awaitility:3.1.2'
+    testCompile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+    compile 'com.github.appium:java-client:de713669d5'
+    testCompile 'org.testng:testng:RELEASE'
+}
